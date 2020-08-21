@@ -1,0 +1,205 @@
+/* From Heimdall: https://github.com/linuxserver/Heimdall */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+#app {
+    min-height: 100vh;
+    background-image: url("../../?action=getBackground");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom
+}
+
+#app,
+#app nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+#app nav {
+    height: 100%;
+    position: absolute;
+    width: 340px;
+    left: -340px;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    z-index: 2
+}
+
+#app .content {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+#app main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+#app #sortable,
+#app main {
+    padding: 30px 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.item-container {
+    position: relative
+}
+
+.white {
+    color: #fff !important
+}
+
+.item {
+    width: 280px;
+    height: 90px;
+    margin: 20px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 280px;
+    flex: 0 0 280px;
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(0, 0%, 100%, 0)), to(hsla(0, 0%, 100%, .25)));
+    background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .25));
+    border-radius: 6px;
+    padding: 15px;
+    padding-right: 55px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+    outline: 1px solid transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #333;
+    border: 1px solid #4a4a4a;
+    border: 1px solid rgba(76, 76, 76, .4);
+    background-clip: padding-box
+}
+
+.item:after {
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    right: -48px;
+    top: 0;
+    background: hsla(0, 0%, 100%, .1);
+    -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .2)
+}
+
+.item .link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    line-height: 90px;
+    color: #fff;
+    font-size: 24px;
+    z-index: 1;
+    padding-right: 10px
+}
+
+.item .title {
+    font-size: 16px
+}
+
+.item .details {
+    width: 100%
+}
+
+.text-center {
+    text-align: center !important
+}
+
+.app-icon {
+    max-width: 60px;
+    margin-right: 15px
+}
+
+.head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+input {
+	border:none;
+	border-bottom: 2px solid #fff;
+	min-width: 850px;
+	padding-bottom: 10px;
+	background-color: transparent;
+	color: #fff;
+	outline: 0;
+	text-align: center;
+}
+
+h1.date {
+	margin-bottom: 75px;
+    font-size: 2.5rem;
+    color: #fff;
+}

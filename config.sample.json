@@ -1,0 +1,20 @@
+{
+    "general": {
+        "globalColor": "#161b1f",
+        "bgMode": "bing",
+        "name": "Home",
+        "newTab": false
+    },
+    "items":[
+        {
+            "name": "Traefik",
+            "link": "http://yourip/dashboard/#/",
+            "icon": "traefik.png"
+        },
+        {
+            "name": "OpenMediaVault",
+            "link": "http://yourip",
+            "icon": "omv.png"
+        }
+    ]
+}
